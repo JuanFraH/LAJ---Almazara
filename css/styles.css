@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(99, 194, 99);
+    text-align: center;
+}
+
+h1 {
+    color: rgb(170, 15, 15);
+    font-size: 130px;
+    font-weight:600;
+}
+
+p{
+    font-weight: 400;
+}
+
+h2{
+    color: rgb(92, 5, 5);
+    font-weight: 500;
+}
+
+.formularios{
+    color:aquamarine;
+    font-size: 50px;
+    font-style: oblique;
+    background-color: rgb(16, 125, 16);
+}

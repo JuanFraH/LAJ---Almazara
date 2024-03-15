@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>VentaAceite</title>
+    </head>
+        <body>
+    
+    <h1>Venta de aceite</h1> 
+        <form action="/my-handling-form-page" method="get">
+            <ul>
+                <li>
+                    <label for="N_factura">Numero de factura:</label>
+                     <input type="N_factura" name="N_factura" id="N_factura" disabled/>
+                </li> 
+                <li>
+                    <label for="date">Fecha:</label>
+                    <input type="date" name="date" id="date" />
+                </li>
+                <li>
+                    <label for="time">Hora:</label>
+                    <input type="time" name="time" id="time" />
+                </li>
+                <li>
+                    <label for="N_socio">Numero de socio:</label>
+                     <input type="N_socio" name="N_socio" id="N_socio"/>
+                </li> 
+                <li>
+                    <label for="Kg_aceituna">Cantidad de aceituna (kg):</label>
+                     <input type="Kg_aceituna" name="Kg_aceituna" id="Kg_aceituna"/>
+                </li>
+                <table border="2">
+                    <tr>
+                        <td> Producto </td>
+                        <td> Cantidad </td>
+                        <td> Precio/litro </td>  
+                        <td> Subtotal </td>  
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <li>
+                                <label for="Tipo de aceite">Tipo de aceite:</label>
+                                <select name="Tipo de aceite" id="Tipo de aceite">
+                                    <option value="Virgen Extra">Virgen Extra</option>
+                                <option value="Virgen">Virgen</option>
+                                <option value="Cosecha temprana">Cosecha temprana</option>
+                                <option value="Ecológico">Ecológico</option>
+                                </select>
+                              </li>
+                        </td>
+                        <td>
+                            <li>
+                                <label for="number"></label>
+                                <input type="number" id="number" name="number">
+                            </li>
+                        </td>
+                        <td>
+                            <li>
+                                <label for="number"></label>
+                                <input type="number" id="number" name="number">
+                            </li>
+                        </td>
+                        <td>
+                            <li>
+                                <label for="number"></label>
+                                <input type="number" id="number" name="number">
+                            </li>
+                        </td>
+                    </tr>
+                </table> 
+            <li>
+                <label for="number">Total Importe</label>
+                <input type="number" id="number" name="number">
+            </li>
+            <li class="button">
+                <button type="submit">Enviar</button>
+            </li>
+            </ul>
+          </form>
+     
+    </body>
+    </html>
