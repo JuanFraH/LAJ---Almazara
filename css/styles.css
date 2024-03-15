@@ -48,3 +48,15 @@ h3{
     text-decoration:underline;
     color: rgb(170, 15, 15);
 }
+
+.nuevoParrafo {
+    background-color: red;
+    font-weight: 700;
+    font-size: 20px;
+    font-style: italic;
+}
+
+image{
+    font-weight:"300"
+    height="240" 
+}
