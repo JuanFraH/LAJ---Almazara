@@ -43,7 +43,8 @@ h2{
 
 h3{
     text-align: center;
-    font-size: 450;
+    font-size: 100px;
     font-family: fantasy;
-    text-decoration: double;
+    text-decoration:underline;
+    color: rgb(170, 15, 15);
 }

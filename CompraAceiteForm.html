@@ -1,10 +1,11 @@
 <html>
     <head>
         <title>VentaAceite</title>
+        <link rel="stylesheet" href="styles.css" />
     </head>
-        <body>
+        <body class="compra">
     
-    <h1>Venta de aceite</h1> 
+    <h1 class="titulo">Venta de aceite</h1> 
         <form action="/my-handling-form-page" method="get">
             <ul>
                 <li>
@@ -27,7 +28,7 @@
                     <label for="Kg_aceituna">Cantidad de aceituna (kg):</label>
                      <input type="Kg_aceituna" name="Kg_aceituna" id="Kg_aceituna"/>
                 </li>
-                <table border="2">
+                <table border="2" class="encabezado">
                     <tr>
                         <td> Producto </td>
                         <td> Cantidad </td>
@@ -37,33 +38,25 @@
 
                     <tr>
                         <td>
-                            <li>
                                 <label for="Tipo de aceite">Tipo de aceite:</label>
                                 <select name="Tipo de aceite" id="Tipo de aceite">
                                     <option value="Virgen Extra">Virgen Extra</option>
                                 <option value="Virgen">Virgen</option>
                                 <option value="Cosecha temprana">Cosecha temprana</option>
-                                <option value="Ecológico">Ecológico</option>
+                                <option value="Ecológico">Ecologico</option>
                                 </select>
-                              </li>
                         </td>
                         <td>
-                            <li>
                                 <label for="number"></label>
                                 <input type="number" id="number" name="number">
-                            </li>
                         </td>
                         <td>
-                            <li>
                                 <label for="number"></label>
                                 <input type="number" id="number" name="number">
-                            </li>
                         </td>
                         <td>
-                            <li>
                                 <label for="number"></label>
                                 <input type="number" id="number" name="number">
-                            </li>
                         </td>
                     </tr>
                 </table> 
