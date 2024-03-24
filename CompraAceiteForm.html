@@ -10,7 +10,7 @@
             <div class="container">
                 <nav role="navigation"  class="navbar navbar-expand-lg bg-body-tertiary navbar" >
                     <div class="container-fluid">
-                      <a class="navbar-brand" href="Index.html">Menï¿½ Principal</a>
+                      <a class="navbar-brand" href="Index.html">Menú Principal</a>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
@@ -18,7 +18,7 @@
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             
                           <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="Informacion.html">Informaciï¿½n</a>
+                            <a class="nav-link active" aria-current="page" href="Informacion.html">Información</a>
                           </li>
             
                           <li class="nav-item">
@@ -38,7 +38,7 @@
                         </ul>
                         <form class="d-flex" role="search">
                           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                          <button class="btn btn-outline-success" type="submit">Bï¿½squeda</button>
+                          <button class="btn btn-outline-success" type="submit">Búsqueda</button>
                         </form>
                       </div>
                     </div>
@@ -54,20 +54,20 @@
                      <input type="N_factura" name="N_factura" id="N_factura" disabled/>
                 </li> 
                 <li>
-                    <label for="date">Fecha:</label>
-                    <input type="date" name="date" id="date" />
+                    <label for="date_v">Fecha:</label>
+                    <input type="date" name="date_v" id="date_v" required/>
                 </li>
                 <li>
-                    <label for="time">Hora:</label>
-                    <input type="time" name="time" id="time" />
+                    <label for="time_v">Hora:</label>
+                    <input type="time" name="time_v" id="time_v" required/>
                 </li>
                 <li>
-                    <label for="N_socio">Numero de socio:</label>
-                     <input type="number" name="N_socio" id="N_socio"/>
+                    <label for="N_socio_v">Numero de socio:</label>
+                     <input type="N_socio" name="N_socio_v" id="N_socio_v" required/>
                 </li> 
                 <li>
-                    <label for="Kg_aceituna">Cantidad de aceituna (kg):</label>
-                     <input type="number" name="Kg_aceituna" id="Kg_aceituna"/>
+                    <label for="Kg_aceituna_e">Cantidad de aceituna (kg):</label>
+                     <input type="Kg_aceituna" name="Kg_aceituna_e" id="Kg_aceituna_e" required/>
                 </li>
                 <table border="2" class="encabezado">
                     <tr>
@@ -84,108 +84,79 @@
                                     <option value="Virgen Extra">Virgen Extra</option>
                                 <option value="Virgen">Virgen</option>
                                 <option value="Cosecha temprana">Cosecha temprana</option>
-                                <option value="Ecolï¿½gico">Ecologico</option>
+                                <option value="Ecológico">Ecologico</option>
                                 </select>
-                        </td><html>
-                          <input type="text" name="municipio" id="municipio" maxlength="30" />
-                        </p>
-                        <p>
-                          <label for="provincia">Poblaciï¿½n:</label>
-                          <select name="provincia" id="provincia">
-                          <option>ï¿½lava
-                          <option> Albacete
-                          <option> Alacant
-                          <option> Almerï¿½a
-                          <option> ï¿½vila
-                          <option>Badajoz
-                          <option>Illes Balears
-                          <option>Barcelona
-                          <option>Burgos
-                          <option> Cï¿½ceres
-                          <option>Cï¿½diz
-                          <option> Castellï¿½
-                          <option> Ciudad Real
-                          <option> Cï¿½rdoba
-                          <option> A Coruï¿½a
-                          <option>Cuenca
-                          <option>  Girona
-                          <option>  Granada
-                          <option>Guadalajara
-                          <option>Gipuzkoa
-                          <option> Huelva
-                          <option>Huesca
-                          <option> Jaï¿½n
-                          <option> Leï¿½n
-                          <option>Lleida
-                          <option> La Rioja
-                          <option>Lugo
-                          <option>Madrid
-                          <option> Mï¿½laga
-                          <option>Murcia
-                          <option>Nafarroa
-                          <option>Ourense
-                          <option>  Asturias
-                          <option>Palencia
-                          <option> Las Palmas
-                          <option> Pontevedra
-                          <option> Salamanca
-                          <option> Sta. Cruz de Tenerife
-                          <option>Cantabria
-                          <option>Segovia
-                          <option>Sevilla
-                          <option> Soria
-                          <option>Tarragona
-                          <option>Teruel
-                          <option> Toledo
-                          <option> Valï¿½ncia
-                          <option> Valladolid
-                          <option> Bizkaia
-                          <option>Zamora
-                          <option> Zaragoza
-                          <option> Ceuta
-                          <option>Melilla</option>
-                  
-                          </select> 
-                        </p>
-                       
-                        <p>
-                          <label for="Telf">Telf:</label> 
-                          <input type="tel" name="Telf" id="Telf" maxlength="30" />
-                        </p>
-                        <p>
-                          <label for="Correo_electronico">Correo_electronico:</label> 
-                          <input type="email" name="Correo_electronico" id="Correo_electronico" maxlength="30" />
-                        </p>
-                  
-                        <p class="button">
-                          <button type="submit">Enviar</button>
-                        </p>
-                        </body>
-                  </html>
-                        <td>
-                                <label for="Cantidad"></label>
-                                <input type="number" id="Cantidad" name="Cantidad">
                         </td>
                         <td>
-                          <label for="Precio/litro"></label>
-                          <input type="number" id="Precio/litro" name="Precio/litro">
-                  </td>
-                  <td>
-                          <label for="Subtotal"></label>
-                          <input type="number" id="Subtotal" name="Subtotal">
-                  </td>
-              </tr>
-          </table> 
-      <li>
-          <label for="Importe">Total Importe</label>
-          <input type="number" id="Importe" name="Importe">
-      </li>
-  </ul>
-      <p class="button">
-          <button type="submit">Enviar</button>
-        </p>
-      
-    </form>
-
-</body>
-</html>
+                                <label for="Cant1"></label>
+                                <input type="number" id="Cant1" name="Cant1" required>
+                        </td>
+                        <td>
+                                <label for="Precio/litro1"></label>
+                                <input type="number" id="Precio/litro1" name="Precio/litro1" required>
+                        </td>
+                        <td>
+                                <label for="Subt1"></label>
+                                <input type="number" id="Subt1" name="Subt1" required>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>
+                              <label for="Tipo de aceite">Tipo de aceite:</label>
+                              <select name="Tipo de aceite" id="Tipo de aceite">
+                                  <option value="Virgen Extra">Virgen Extra</option>
+                              <option value="Virgen">Virgen</option>
+                              <option value="Cosecha temprana">Cosecha temprana</option>
+                              <option value="Ecológico">Ecologico</option>
+                              </select>
+                      </td>
+                      <td>
+                              <label for="Cant2"></label>
+                              <input type="number" id="Cant2" name="Cant2" >
+                      </td>
+                      <td>
+                              <label for="Precio/litro2"></label>
+                              <input type="number" id="Precio/litro2" name="Precio/litro2" >
+                      </td>
+                      <td>
+                              <label for="Subt2"></label>
+                              <input type="number" id="Subt2" name="Subt2" >
+                      </td>
+                  </tr>
+                  <tr>
+                    <td>
+                            <label for="Tipo de aceite">Tipo de aceite:</label>
+                            <select name="Tipo de aceite" id="Tipo de aceite">
+                                <option value="Virgen Extra">Virgen Extra</option>
+                            <option value="Virgen">Virgen</option>
+                            <option value="Cosecha temprana">Cosecha temprana</option>
+                            <option value="Ecológico">Ecologico</option>
+                            </select>
+                    </td>
+                    <td>
+                            <label for="Cant3"></label>
+                            <input type="number" id="Cant3" name="Cant3" >
+                    </td>
+                    <td>
+                            <label for="Precio/litro3"></label>
+                            <input type="number" id="Precio/litro3" name="Precio/litro3" >
+                    </td>
+                    <td>
+                            <label for="Subt3"></label>
+                            <input type="number" id="Subt3" name="Subt3" >
+                    </td>
+                </tr>
+                </table> 
+            <li>
+                <label for="T_import">Total Importe</label>
+                <input type="number" id="T_import" name="T_import" required>
+            </li>
+        </ul>
+            <p class="button">
+                <button type="submit">Enviar</button>
+              </p>
+            
+          </form>
+     
+    </body>
+    </html>
