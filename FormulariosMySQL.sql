@@ -9,6 +9,7 @@ CREATE TABLE Socio (
   Provincia varchar(40) NOT NULL,
   Telefono char(9) NOT NULL,
   Correo varchar(40) NOT NULL,
+  CONSTRAINT Telefono_ck CHECK(Telefono like '[0-9]{9}'),
   CONSTRAINT Socio_pk PRIMARY KEY(NIF)
 );
 
