@@ -41,7 +41,7 @@ CREATE TABLE Ventas(
 
 CREATE TABLE Producto(
 Cod_Producto integer AUTO_INCREMENT,
-Denominación ENUM("Virgen Extra","Virge","Cosecha temprana","Ecológico") NOT NULL,
+Denominación ENUM("Virgen Extra","Virgen","Cosecha temprana","Ecológico") NOT NULL,
 Precio float,
 CONSTRAINT Precio_ck CHECK (Precio > 0),                        
 CONSTRAINT Producto_pk PRIMARY KEY(Cod_Producto)
