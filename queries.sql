@@ -46,8 +46,9 @@ CONSTRAINT Producto_pk PRIMARY KEY(Cod_Producto)
 );
 
 CREATE TABLE Venta_Producto(
-N_Factura integer AUTO_INCREMENT,
-Cod_Producto integer AUTO_INCREMENT,
+Venta_Producto integer AUTO_INCREMENT,
+N_Factura integer,
+Cod_Producto integer,
 CONSTRAINT Ventas_Producto_pk PRIMARY KEY(Venta_Producto),
 CONSTRAINT Venta_Producto_N_Factura_pk FOREIGN KEY(N_Factura)
                                 REFERENCES Ventas(N_Factura)
@@ -58,6 +59,3 @@ CONSTRAINT Venta_Producto_Cod_Producto_pk FOREIGN KEY(Cod_Producto)
                                 ON UPDATE CASCADE
                                 ON DELETE NO ACTION
 );
-
-
-
