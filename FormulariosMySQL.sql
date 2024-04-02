@@ -16,10 +16,11 @@ CREATE TABLE Entregas (
   N_Entrega integer AUTO_INCREMENT,                        
   Fecha_hora timestamp NOT NULL,
   Cantidad integer NOT NULL,
-  Tipo text NOT NULL,
+  Tipo ENUM("Árbol","Suelo") NOT NULL,
   Parcela_SIGPAC char(10) NOT NULL,
   Recinto_SIGPAC char(10) NOT NULL,
   NIF_socio varchar(9),
+  CONSTRAINT Cantidad_ck CHECK (Cantidad > 0),
   CONSTRAINT Entregas_pk PRIMARY KEY(N_Entrega),
   CONSTRAINT Entregas_NIF_pk FOREIGN KEY(NIF_socio)
                           REFERENCES Socio(NIF)
@@ -40,8 +41,9 @@ CREATE TABLE Ventas(
 
 CREATE TABLE Producto(
 Cod_Producto integer AUTO_INCREMENT,
-Denominación varchar(20) NOT NULL,
-Precio float,                             
+Denominación ENUM("Virgen Extra","Virge","Cosecha temprana","Ecológico") NOT NULL,
+Precio float,
+CONSTRAINT Precio_ck CHECK (Precio > 0),                        
 CONSTRAINT Producto_pk PRIMARY KEY(Cod_Producto)
 );
 
