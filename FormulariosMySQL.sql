@@ -9,6 +9,7 @@ CREATE TABLE Socio (
   Provincia varchar(40) NOT NULL,
   Telefono char(9) NOT NULL,
   Correo varchar(40) NOT NULL,
+  CONSTRAINT tel_ck CHECK(Telefono REGEXP '^[0-9]{9}'),
   CONSTRAINT NIF_ck CHECK(NIF REGEXP '^[0-9]{8}[TRWAGMYFPDXBNJZSQVHLCKE]'),
   CONSTRAINT Socio_pk PRIMARY KEY(NIF)
 );
