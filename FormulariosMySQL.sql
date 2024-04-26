@@ -1,3 +1,7 @@
+DROP Almazara if exists;
+Create Almazara;
+Use Almazara;
+
 CREATE TABLE Socio (
   NIF varchar(9),
   Nombre varchar(20) NOT NULL,
