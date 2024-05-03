@@ -1,5 +1,5 @@
-DROP Almazara if exists;
-Create Almazara;
+DROP DATABASE if exists Almazara;
+Create DATABASE Almazara;
 Use Almazara;
 
 CREATE TABLE Socio (
@@ -7,10 +7,10 @@ CREATE TABLE Socio (
   Nombre varchar(20) NOT NULL,
   Apellido1 varchar(20) NOT NULL,
   Apellido2 varchar(20),
-  Dirección varchar(40) NOT NULL,
+  Dirección varchar(60) NOT NULL,
   Cod_Postal char(5) NOT NULL,
-  Municipio varchar(40) NOT NULL,
   Provincia varchar(40) NOT NULL,
+  Municipio varchar(40) NOT NULL,
   Telefono char(9) NOT NULL,
   Correo varchar(40) NOT NULL,
   CONSTRAINT tel_ck CHECK(Telefono REGEXP '^[0-9]{9}'),
@@ -18,8 +18,8 @@ CREATE TABLE Socio (
   CONSTRAINT Socio_pk PRIMARY KEY(NIF)
 );
 
-INSERT INTO Socio VALUES ('84769578H', 'Antonio', 'López','Cruz','Av de Andalucía, 36','23006', 'Jaén','Alcalá la Real','735583926','mariacastro123@hotmail.com');
-INSERT INTO Socio VALUES ('53526236J', 'Alfonso', 'Sánchez','Gómez','Av Salobreja, 12','23007', 'Jaén','Bailén','643723746','Yeipa46@hotmail.com');
+INSERT INTO Socio VALUES ('84769578H', 'Antonio', 'López','Cruz','Av de Andalucía, 36','23006', 'Alcalá la Real','Jaén','735583926','mariacastro123@hotmail.com');
+INSERT INTO Socio VALUES ('53526236J', 'Alfonso', 'Sánchez','Gómez','Av Salobreja, 12','23007', 'Bailén','Jaén','643723746','Yeipa46@hotmail.com');
 INSERT INTO Socio VALUES ('64378496R', 'Juan Francisco', 'Hernández','Gómez','Av Granada, 76','23005', 'Jaén','Jaén','436774189','elpaco@hotmail.com');
 SELECT * FROM Socio;
 
@@ -76,6 +76,7 @@ CREATE TABLE Venta_Producto(
 Venta_Producto integer AUTO_INCREMENT,
 N_Factura integer,
 Cod_Producto integer,
+Cantidad integer,
 CONSTRAINT Ventas_Producto_pk PRIMARY KEY(Venta_Producto),
 CONSTRAINT Venta_Producto_N_Factura_pk FOREIGN KEY(N_Factura)
                                 REFERENCES Ventas(N_Factura)
