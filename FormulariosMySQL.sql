@@ -20,7 +20,7 @@ CREATE TABLE Socio (
 
 INSERT INTO Socio VALUES ('84769578H', 'Antonio', 'López','Cruz','Av de Andalucía, 36','23006', 'Alcalá la Real','Jaén','735583926','mariacastro123@hotmail.com');
 INSERT INTO Socio VALUES ('53526236J', 'Alfonso', 'Sánchez','Gómez','Av Salobreja, 12','23007', 'Bailén','Jaén','643723746','Yeipa46@hotmail.com');
-INSERT INTO Socio VALUES ('64378496R', 'Juan Francisco', 'Hernández','Gómez','Av Granada, 76','23005', 'Jaén','Jaén','436774189','elpaco@hotmail.com');
+INSERT INTO Socio VALUES ('64378496R', 'Pedro', 'Jiménez','Gómez','c/ Barcelona, 76','23005', 'Jaén','Jaén','436774189','elpaco@hotmail.com');
 SELECT * FROM Socio;
 
 CREATE TABLE Entregas (
