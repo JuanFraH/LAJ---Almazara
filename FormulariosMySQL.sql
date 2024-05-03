@@ -87,3 +87,8 @@ CONSTRAINT Venta_Producto_Cod_Producto_pk FOREIGN KEY(Cod_Producto)
                                 ON UPDATE CASCADE
                                 ON DELETE NO ACTION
 );
+
+INSERT INTO Venta_Producto VALUES(null, 1, 2 ,24);
+INSERT INTO Venta_Producto VALUES(null, 3, 3 ,18);
+INSERT INTO Venta_Producto VALUES(null, 2, 3 ,12);
+SELECT * FROM Venta_Producto;
