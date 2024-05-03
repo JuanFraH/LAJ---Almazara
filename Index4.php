@@ -16,19 +16,28 @@
   }
   
   echo "Conexión correcta";
-   $date_e = $_POST['date_e'];
 
-   $kg = $_POST['Kg_aceituna_e'];
+   $NIF = $_POST['NIF'];
 
-   $as = $_POST['as'];
+   $Nombre = $_POST['Nombre'];
 
-   $P_S = $_POST['P_SIGPAC'];
+   $apellido1 = $_POST['apellido1'];
 
-   $R_S = $_POST['R_SIGPAC'];
+   $apellido2 = $_POST['apellido2'];
 
-   $NIF_s = $_POST['NIF_socio_e'];
+   $direccion = $_POST['direccion'];
 
-    $sentenciaSQL = "INSERT INTO entregas VALUES(null, '". $date_e."', " . $kg .",'" . $as ."','" . $P_S ."','" . $R_S ."','" . $NIF_s . "')";
+   $cod_postal = $_POST['cod_postal'];
+
+   $provincia = $_POST['provincia'];
+
+   $municipio = $_POST['municipio'];
+
+   $Telf = $_POST['Telf'];
+
+   $Correo_electronico = $_POST['Correo_electronico'];
+
+    $sentenciaSQL = "INSERT INTO socio VALUES('". $NIF ."','" . $Nombre ."','" . $apellido1 ."','" . $apellido2 ."','" . $direccion . "','" . $cod_postal . "','" . $provincia . "','" . $municipio . "','" . $Telf . "','" . $Correo_electronico . "')";
     
     echo $sentenciaSQL;
      

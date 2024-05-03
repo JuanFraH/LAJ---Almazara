@@ -16,19 +16,13 @@
   }
   
   echo "Conexión correcta";
-   $date_e = $_POST['date_e'];
+   $date_v = $_POST['date_v'];
 
-   $kg = $_POST['Kg_aceituna_e'];
+   $NIF_socio_v = $_POST['NIF_socio_v'];
 
-   $as = $_POST['as'];
+   $T_import = $_POST['T_import'];
 
-   $P_S = $_POST['P_SIGPAC'];
-
-   $R_S = $_POST['R_SIGPAC'];
-
-   $NIF_s = $_POST['NIF_socio_e'];
-
-    $sentenciaSQL = "INSERT INTO entregas VALUES(null, '". $date_e."', " . $kg .",'" . $as ."','" . $P_S ."','" . $R_S ."','" . $NIF_s . "')";
+    $sentenciaSQL = "INSERT INTO ventas VALUES(null, '" . $NIF_socio_v ."','" . $date_v ."'," . $T_import .")";
     
     echo $sentenciaSQL;
      
